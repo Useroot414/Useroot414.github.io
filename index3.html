@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea de Negocio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <img src="imagenes/Logo2.png" alt="Logo de la marca"></a>  
+        </div>
+        <a class="btn" href="index.html"><button>Aprende a Tu RITMO</button></a>
+    </header>
+
+    <div class="content">
+        
+        <h2>IDEA DE NEGOCIO</h2>
+        
+        <section>
+            <h3>Mision</h3>
+            <p>La misión de ofrecer una educación personalizada y accesible, apoyada en el talento de los egresados del IPN, 
+                busca cambiar vidas y fortalecer nuestra comunidad. Imagina un espacio donde cada estudiante puede aprender a su ritmo, 
+                recibiendo la orientación y el apoyo que necesita para crecer. 
+                Al contar con la sabiduría y experiencia de quienes ya han transitado ese camino, 
+                no solo elevamos el nivel educativo, sino que también forjamos un sentido de pertenencia y orgullo.
+                Con este enfoque, queremos frenar la fuga de cerebros, asegurando que nuestros mejores talentos encuentren aquí las 
+                oportunidades 
+                para prosperar y contribuir al desarrollo del país. 
+                Es una misión que combina pasión, compromiso y la convicción de que la educación es la llave para un futuro 
+                mejor para todos.
+            </p>
+        </section>
+
+        <section>
+            <h3>Vison</h3>
+            <p>Nuestra visión es convertirnos en la plataforma educativa líder en México, destacada por su capacidad de adaptarse a las necesidades 
+                individuales de cada estudiante y por ser accesible para todos. Imagina un lugar donde cada persona, sin importar su contexto, 
+                pueda encontrar el apoyo y los recursos necesarios para alcanzar su máximo potencial.
+                Queremos ser reconocidos por entender que cada estudiante es único y por ofrecer una educación que se adapta a sus fortalezas, 
+                intereses y ritmo. Así, nos aseguramos de que nadie quede atrás y de que todos tengan la oportunidad de brillar. 
+                Esta misión no solo nos impulsa a mejorar constantemente, sino que también refleja nuestro compromiso con una educación 
+                inclusiva y de calidad para todos.</p>
+        </section>
+
+        <section>
+            <h3>Idea del Negocio</h3>
+            <p>una plataforma educativa en línea impulsada por inteligencia artificial (IA) diseñada para personalizar el aprendizaje en función 
+                del ritmo y estilo de comprensión de cada alumno. La plataforma se enfoca especialmente en estudiantes con dificultades de 
+                aprendizaje, quienes requieren un enfoque educativo adaptado a sus necesidades. La IA se ajusta dinámicamente: 
+                si el alumno muestra un aprendizaje rápido, los contenidos se presentan de forma más avanzada y acelerada; 
+                si el alumno necesita más tiempo, la plataforma ofrece contenido a un ritmo pausado y desglosado.<br></p>
+        </section>
+        <section>
+            <h3>Objetivo del Proyecto</h3>
+            <p>Crear una plataforma educativa impulsada por IA que adapte el contenido educativo a las necesidades de aprendizaje de cada alumno,
+                 permitiéndole avanzar a su propio ritmo y reforzar sus áreas de dificultad.<br></p>
+        </section>
+
+        <section>
+            <h3>Funcionalidades de la Plataforma</h3>
+            <p>Evaluación Inicial: Una prueba diagnóstica inicial para evaluar el nivel de comprensión y estilo de aprendizaje.<br>
+                Personalización del Aprendizaje: Basado en el diagnóstico, la IA ajusta los contenidos y el ritmo de acuerdo con 
+                el estilo de cada estudiante.<br>
+                Retroalimentación Continua: El sistema brinda retroalimentación inmediata al estudiante y adapta los contenidos 
+                si detecta dificultad en alguna área.<br>
+                Gamificación: Recompensas y logros que estimulan al estudiante a continuar.<br>
+                Reportes de Desempeño: Los padres y educadores reciben reportes sobre los avances y dificultades del estudiante, 
+                permitiendo un seguimiento constante.<br>
+                Biblioteca de Recursos Adaptativa: Una colección de materiales en distintos formatos y niveles de dificultad, 
+                disponibles para el estudiante en función de sus necesidades.</p>
+        </section>
+    </div>
+
+    <button id="botonIrArriba" onclick="irArriba()">Ir al inicio</button>
+
+    <script>
+        // Mostrar el botón cuando el usuario baja la página
+        window.onscroll = function() {
+            let boton = document.getElementById("botonIrArriba");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                boton.style.display = "block";
+            } else {
+                boton.style.display = "none";
+            }
+        };
+
+        // Función para ir al principio de la página
+        function irArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
+
+    

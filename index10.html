@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende a tu Ritmo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <img src="imagenes/Logo2.png" alt="Logo de la marca"></a>  
+        </div>
+        <a class="btn" href="index.html"><button>Aprende a Tu RITMO</button></a>
+    </header>
+    
+    <div class="content">
+    <h2>Por qué se ha rezagado México en ciencia y tecnología y como es que nuestra página que enseña las bases para alumnos de 
+        ingeniería cubre parte de este problema </h2>
+
+    <section>
+        <h3>Cómo nuestra plataforma de mentoría puede abordar parte de este problema</h3>
+        <p>Acceso a educación de calidad y accesible: La oferta de lecciones y mentorías en línea permite a estudiantes de ciencias e 
+            ingeniería acceder a contenidos y conocimientos esenciales, eliminando barreras físicas de acceso y aumentando la cobertura 
+            educativa en estas áreas.<br>
+            Fortalecimiento de bases en ciencia y tecnología: Al cubrir temas fundamentales, la plataforma ayuda a construir una base 
+            sólida en ciencias e ingeniería. Esto contribuye a que los estudiantes se sientan preparados y motivados para seguir 
+            carreras en áreas tecnológicas, incrementando el talento local.<br>
+            Mentoría personalizada: La posibilidad de recibir apoyo directo de mentores permite a los estudiantes resolver dudas, 
+            superar dificultades y recibir orientación, aspectos a menudo faltantes en los sistemas educativos tradicionales.<br>
+            Desarrollo de habilidades prácticas: Ofreciendo recursos y ejercicios aplicados, los estudiantes aprenden de forma práctica, 
+            entendiendo cómo la teoría se aplica a problemas reales. Esto promueve la innovación y prepara a futuros ingenieros para 
+            poner en práctica sus conocimientos en la industria.<br>
+            Creación de una comunidad de aprendizaje: Reuniendo a estudiantes y mentores, la plataforma fomenta la creación de una 
+            comunidad con interés en ciencia y tecnología. Esta comunidad puede incentivar la colaboración en proyectos, 
+            la generación de ideas innovadoras y un valioso intercambio de conocimientos para el desarrollo tecnológico en México.<br>
+            A través de estas acciones, la plataforma puede contribuir al fortalecimiento de la educación en ciencia y tecnología en 
+            México, mejorando la preparación de futuros profesionales en el país.</p>
+    </section>
+</div>
+
+<button id="botonIrArriba" onclick="irArriba()">Ir al inicio</button>
+
+<script>
+    // Mostrar el botón cuando el usuario baja la página
+    window.onscroll = function() {
+        let boton = document.getElementById("botonIrArriba");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            boton.style.display = "block";
+        } else {
+            boton.style.display = "none";
+        }
+    };
+
+    // Función para ir al principio de la página
+    function irArriba() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

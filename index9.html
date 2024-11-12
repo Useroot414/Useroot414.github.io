@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <img src="imagenes/Logo2.png" alt="Logo de la marca"></a>  
+        </div>
+        <a class="btn" href="index.html"><button>Aprende a Tu RITMO</button></a>
+    </header>
+        
+        <div class="content">
+            <h2>PORQUE EN MEXICO CIENCIA Y TECNOLOGIA</h2>
+    
+            <section>
+                <h3>México enfrenta varios obstáculos en ciencia y tecnología, tales como:</h3>
+                <p>Baja inversión en investigación y desarrollo (I+D): México destina una fracción muy pequeña de su PIB a I+D comparado con 
+                    países desarrollados. Esto limita el acceso a infraestructura, laboratorios y recursos cruciales para realizar 
+                    investigaciones de alta calidad e impacto global. Además, el bajo financiamiento reduce las oportunidades para que 
+                    científicos e investigadores puedan emprender proyectos ambiciosos.<br>
+                    Escasa conexión entre academia e industria: Existe una falta de alineación entre las universidades y el sector productivo. 
+                    Con frecuencia, las investigaciones en el ámbito académico no encuentran aplicaciones prácticas o no se ajustan a las 
+                    demandas de la industria, lo cual reduce el potencial innovador del país..<br>
+                    Fuga de cerebros: Muchos científicos e ingenieros mexicanos emigran a otros países en busca de mejores oportunidades de 
+                    formación y empleo. Esto sucede debido a las condiciones laborales limitadas y las escasas oportunidades de crecimiento en 
+                    México, lo que dificulta la retención del talento necesario para el avance en ciencia y tecnología.<br>
+                    Deficiencia en la educación en ciencia y tecnología desde niveles básicos: Aunque hay esfuerzos en universidades, 
+                    la enseñanza de áreas científicas y tecnológicas en niveles básicos es insuficiente. 
+                    Esto resulta en una preparación limitada y una menor motivación para que los estudiantes elijan carreras en ciencia y 
+                    tecnología.<br>
+                    Burocracia y falta de continuidad en políticas de ciencia y tecnología: Los cambios en administraciones públicas y 
+                    políticas educativas afectan los proyectos de largo plazo, provocando discontinuidades en los programas de 
+                    desarrollo científico.</p>
+            </section>
+        </div>
+    
+        <button id="botonIrArriba" onclick="irArriba()">Ir al inicio</button>
+
+        <script>
+            // Mostrar el botón cuando el usuario baja la página
+            window.onscroll = function() {
+                let boton = document.getElementById("botonIrArriba");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    boton.style.display = "block";
+                } else {
+                    boton.style.display = "none";
+                }
+            };
+    
+            // Función para ir al principio de la página
+            function irArriba() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
+    
+</body>
+</html>

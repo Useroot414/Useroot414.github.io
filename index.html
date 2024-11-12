@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende a tu Ritmo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header class="header">
+        <div class="logo">
+            <a href="index2.html">
+            <img src="imagenes/Logo2.png" alt="Logo de la marca"></a>  
+        </div>
+        <a class="btn" href="#"><button>Aprende a Tu RITMO</button></a>
+    </header>
+      
+    <div class="container-card">
+        <div class="card">
+          
+          <figure>
+            <img src="imagenes/Caracteristicas.jpeg"/>
+          </figure>
+          
+          <div class="contenido-card">
+            <h3>Caracteristicas y Cualidades de Nosotros</h3>
+            <p>
+              Valores y habilidades únicas que definen al equipo.
+            </p>
+            <a href="index2.html">Más</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <figure>
+            <img src="imagenes/ideaNegocio.jpeg"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>Idea del Negocio</h3>
+            <p>
+              Propuesta de valor que define qué problema resuelve el negocio y cómo se diferencia.
+            </p>
+            <a href="index3.html">Más</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <figure>
+            <img src="imagenes/Foda.jpeg"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>Analisis FODA</h3>
+            <p>
+              Fortalezas, Oportunidades, Debilidades y Amenazas de la empresa.
+            </p>
+            <a href="index4.html">Más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-card">
+        <div class="card">
+          <figure>
+            <img src="imagenes/RH.jpeg"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>Plan de Recursos Humanos</h3>
+            <p>
+              Estrategia para gestionar y desarrollar al equipo de trabajo.
+            </p>
+            <a href="index5.html">Más</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <figure>
+            <img src="imagenes/Competencia.png"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>Tendencias del Sector</h3>
+            <p>
+              Cambios y novedades en el mercado que afectan al negocio.
+            </p>
+            <a href="index6.html">Más</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <figure>
+            <img src="imagenes/Marketing.jpeg"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>Plan Comercial y Marketing</h3>
+            <p>
+              Estrategias para promocionar y vender el producto o servicio.
+            </p>
+            <a href="index7.html">Más</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container-card">
+        <div class="card">
+          <figure>
+            <img src="imagenes/Finanzas.png"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>Propuesta del Plan Economico y Financiero</h3>
+            <p>
+              Cómo se financiará y gestionará el dinero de la empresa.
+            </p>
+            <a href="index8.html">Más</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <figure>
+            <img src="imagenes/Fuga.jpeg"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>Problematicas en Mexico en Ciencia y Tecnologia Fuga de Cerebros y Falta de Patentes</h3>
+            <p>
+              Fuga de talento y baja en patentes que limitan la innovación.
+            </p>
+            <a href="index9.html">Más</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <figure>
+            <img src="imagenes/Mexico.jpeg"/>
+          </figure>
+          <div class="contenido-card">
+            <h3>Marco Teorico</h3>
+            <p>
+              Conceptos clave que sustentan el plan y sus estrategias.
+            </p>
+            <a href="index10.html">Más</a>
+          </div>
+        </div>
+      </div>
+
+      <button id="botonIrArriba" onclick="irArriba()">Ir al inicio</button>
+
+      <script>
+          // Mostrar el botón cuando el usuario baja la página
+          window.onscroll = function() {
+              let boton = document.getElementById("botonIrArriba");
+              if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                  boton.style.display = "block";
+              } else {
+                  boton.style.display = "none";
+              }
+          };
+  
+          // Función para ir al principio de la página
+          function irArriba() {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+      </script>
+  
+</body>
+</html>

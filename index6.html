@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendencias del Sector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <img src="imagenes/Logo2.png" alt="Logo de la marca"></a>  
+        </div>
+        <a class="btn" href="index.html"><button>Aprende a Tu RITMO</button></a>
+    </header>
+    <div class="content">
+        <h2>TENDENCIAS DEL SECTOR</h2>
+
+        <section>
+            <h3>Udemy</h3>
+            <p>Alcance de usuarios: Udemy tiene más de 59 millones de usuarios y 75,000 instructores. <br>
+                Metodologías: Ofrece una amplia variedad de cursos en video, con un enfoque en 
+                habilidades prácticas y profesionales.<br>
+                Precios: Los cursos varían en precio, con muchos cursos pagados que cuestan alrededor de 
+                $30 por curso. También hay planes de suscripción para empresas.<br>
+                Variedad de cursos: Udemy ofrece más de 213,000 cursos en más de 65 idiomas</p>
+        </section>
+
+        <section>
+            <h3>Coursera</h3>
+            <p>Alcance de usuarios: Coursera cuenta con 100 millones de usuarios registrados.<br>
+                Metodologías: Colabora con universidades y empresas para ofrecer cursos y certificados en línea, 
+                con un enfoque en educación formal y profesional.<br>
+                Precios: Los cursos varían en precio, con una suscripción mensual de $59 y una opción anual de $399.<br>
+                Variedad de cursos: Coursera ofrece más de 7,000 cursos en colaboración con más de 275 instituciones.</p>
+        </section>
+
+        <section>
+            <h3>Khan Academys</h3>
+            <p>Alcance de usuarios: Khan Academy tiene más de 150 millones de usuarios en todo el mundo.<br>
+                Metodologías: Ofrece recursos educativos gratuitos, con un enfoque en la educación K-12 y temas de aprendizaje continuo.<br>
+                Precios: Todos los recursos y cursos son gratuitos.<br>
+                Variedad de cursos: Khan Academy ofrece una amplia gama de cursos en matemáticas, ciencias, idiomas, y más.</p>
+        </section>
+    </div>
+
+    <button id="botonIrArriba" onclick="irArriba()">Ir al inicio</button>
+
+    <script>
+        // Mostrar el botón cuando el usuario baja la página
+        window.onscroll = function() {
+            let boton = document.getElementById("botonIrArriba");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                boton.style.display = "block";
+            } else {
+                boton.style.display = "none";
+            }
+        };
+
+        // Función para ir al principio de la página
+        function irArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

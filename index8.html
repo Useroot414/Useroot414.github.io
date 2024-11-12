@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta del Plan Economico y Financiero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <img src="imagenes/Logo2.png" alt="Logo de la marca"></a>  
+        </div>
+        <a class="btn" href="index.html"><button>Aprende a Tu RITMO</button></a>
+    </header>
+
+    <div class="content">
+        <h2>PROPUESTA Y PLAN FINANCIERO</h2>
+    
+    
+     <section>
+        <h3>Plan Financiero</h3>
+        <p>Inversión Inicial: $1,200,000 MXN en desarrollo, contenido, y marketing.<br>
+            Proyecciones de Ingreso: Punto de equilibrio al inicio del tercer año, con ingresos sostenibles a través de suscripciones, 
+            patrocinios, y certificaciones.</p>
+    </section>
+
+    <section>
+        <h3>Plan Económico y Rol de la Incubadora</h3>
+        <p>Inversión inicial: $1,200,000 MXN, financiada por patrocinadores, socios, incubadoras y fondos gubernamentales.<br>
+            Proyecciones de ingreso: Ingresos de $3,500,000 MXN al tercer año, con el punto de equilibrio en la segunda mitad del tercer año.</p>
+    </section>
+    
+    <button id="botonIrArriba" onclick="irArriba()">Ir al inicio</button>
+
+    <script>
+        // Mostrar el botón cuando el usuario baja la página
+        window.onscroll = function() {
+            let boton = document.getElementById("botonIrArriba");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                boton.style.display = "block";
+            } else {
+                boton.style.display = "none";
+            }
+        };
+
+        // Función para ir al principio de la página
+        function irArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis FODA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <img src="imagenes/Logo2.png" alt="Logo de la marca"></a>  
+        </div>
+        <a class="btn" href="index.html"><button>Aprende a Tu RITMO</button></a>
+    </header>
+
+    <div class="content">
+        <h2>ANALISIS FODA</h2>
+
+        <section>
+            <h3>Fortalezas</h3>
+            <p>La oferta de contenido personalizado y una experiencia de mentoría uno a uno es una gran fortaleza. Este enfoque puede atraer a 
+                estudiantes que buscan una atención más individualizada y directa.
+                También existe una gran oportunidad para el desarrollo continuo de nuevas áreas de aprendizaje, 
+                lo que permite mantenerse relevante y adaptarse a las necesidades cambiantes del mercado.
+            </p>
+        </section>
+
+        <section>
+            <h3>Oportunidades</h3>
+            <p>El crecimiento del aprendizaje en línea y la demanda por educación accesible presentan una enorme oportunidad. 
+                Cada vez más personas buscan alternativas educativas flexibles y accesibles.
+                Además, hay un potencial significativo para expandirse hacia áreas especializadas y de alta demanda, 
+                lo que puede atraer a un público diverso y con intereses específicos.</p>
+        </section>
+
+        <!-- Sección 3 -->
+        <section>
+            <h3>Debilidades</h3>
+            <p>Los altos costos iniciales de desarrollo web y de tecnología pueden ser un obstáculo importante. 
+                Es necesario invertir mucho tiempo y recursos para crear una plataforma funcional y atractiva.
+                Además, establecer una red de mentores confiables requiere tiempo y esfuerzo, 
+                ya que es vital contar con personas calificadas y comprometidas que guíen a los estudiantes.</p>
+        </section>
+
+        <section>
+            <h3>Amenazas</h3>
+            <p>La competencia con plataformas ya establecidas como Udemy y Khan Academy es una amenaza significativa. 
+                Estas plataformas tienen una gran base de usuarios y recursos que pueden ser difíciles de igualar.
+                Los cambios en la regulación de servicios educativos en línea pueden afectar la operación y el cumplimiento de las normas, 
+                lo que podría implicar ajustes costosos y complicados.</p>
+        </section>
+    </div>
+
+    <button id="botonIrArriba" onclick="irArriba()">Ir al inicio</button>
+
+    <script>
+        // Mostrar el botón cuando el usuario baja la página
+        window.onscroll = function() {
+            let boton = document.getElementById("botonIrArriba");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                boton.style.display = "block";
+            } else {
+                boton.style.display = "none";
+            }
+        };
+
+        // Función para ir al principio de la página
+        function irArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caracteristicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <img src="imagenes/Logo2.png" alt="Logo de la marca"></a>  
+        </div>
+        <a class="btn" href="index.html"><button>Aprende a Tu RITMO</button></a>
+    </header>
+
+    <div class="content">
+        <h2>CARACTERISTICAS DEL EQUIPO</h2>
+
+        <section>
+            <h3>Ricardo</h3>
+            <p>es perseverante, paciente, observador y analítico; cualidades que hacen que cada detalle cobre un significado profundo en lo que 
+                haces. Esa combinación no solo es admirable, sino que te convierte en alguien extraordinario, capaz de profundizar en cualquier 
+                situación y descubrir posibilidades que otros pasarían por alto.</p>
+        </section>
+
+        <section>
+            <h3>Fernando</h3>
+            <p>es una persona inteligente, trabajadora, constante, consistente y precavida. Esta combinación de cualidades te convierte en 
+                alguien con una gran capacidad para lograr cualquier meta que te propongas, siempre cuidando cada detalle y manteniéndote 
+                firme en tu camino. Sin duda, tienes un enfoque extraordinario y poderoso para enfrentar los desafíos.</p>
+        </section>
+
+        <section>
+            <h3>Miguel Angel</h3>
+            <p>es alguien que combina persistencia y constancia con astucia y seguridad, cualidades que te permiten afrontar cualquier desafío 
+                sin temor. Tu gusto por los retos y tu capacidad para manejar situaciones difíciles te convierten en una persona decidida y 
+                audaz, siempre lista para superar cualquier obstáculo que se cruce en tu camino.</p>
+        </section>
+    </div>
+
+    <button id="botonIrArriba" onclick="irArriba()">Ir al inicio</button>
+
+    <script>
+        // Mostrar el botón cuando el usuario baja la página
+        window.onscroll = function() {
+            let boton = document.getElementById("botonIrArriba");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                boton.style.display = "block";
+            } else {
+                boton.style.display = "none";
+            }
+        };
+
+        // Función para ir al principio de la página
+        function irArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+
+</body>
+</html>

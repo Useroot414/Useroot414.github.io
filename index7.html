@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Comercial y Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <img src="imagenes/Logo2.png" alt="Logo de la marca"></a>  
+        </div>
+        <a class="btn" href="index.html"><button>Aprende a Tu RITMO</button></a>
+    </header>
+
+    <div class="content">
+        <h2>PLAN COMERCIAL Y MARKETING</h2>
+
+        <section>
+            <h3>Objetivos</h3>
+            <p>1. Incrementar la visibilidad y reconocimiento de la marca.<br>
+                2. Atraer a 10.000 nuevos estudiantes en el primer año.<br>
+                3. Establecer alianzas con 20 instituciones educativas en el primer año.<br>
+                4. Incrementar las ventas en un 20% en el primer año.
+                </p>
+        </section>
+
+        <section>
+            <h3>Estrategia/Campañas en redes sociales</h3>
+            <p>1. Facebook: Crear grupos privados para estudiantes de ingeniería, donde se compartan recursos y consejos. 
+                Publicar contenido relevante y patrocinado.<br>
+                2. Instagram: Compartir historias de éxito de estudiantes que han utilizado la plataforma. 
+                Utilizar hashtags relevantes y colaborar con influencers en ingeniería.<br>
+                3. LinkedIn: Publicar artículos y videos sobre tendencias en ingeniería y mentoría. 
+                Participar en grupos de discusión relacionados con la industria.<br>
+                4. Twitter: Compartir consejos y recursos en formato de threads.<br>
+                Utilizar hashtags relevantes y participar en conversaciones relacionadas con la educación.
+                </p>
+        </section>
+
+        <section>
+            <h3>Colaboraciones con instituciones educativas</h3>
+            <p>1. Acuerdos de colaboración: Establecer acuerdos con instituciones educativas para ofrecer cursos y mentoría a sus estudiantes.<br>
+                2. Programas de certificación: Desarrollar programas de certificación conjuntos con instituciones educativas.<br>
+                3. Eventos y webinars: Organizar eventos y webinars en colaboración con instituciones educativas.<br>
+                </p>
+        </section>
+        
+        <section>
+    <h3>Contenido y recursos</h3>
+            <p>1. Blog: Crear un blog con artículos sobre tendencias en ingeniería, mentoría y educación.<br>
+                2. Videos: Crear videos explicativos sobre temas relevantes en ingeniería.<br>
+                3. Cursos de prueba: Ofrecer cursos de prueba gratuitos para que los estudiantes prueben la plataforma.<br>
+                4. Testimonios: Compartir testimonios de estudiantes satisfechos. </p>
+        </section>
+    </div>
+
+    <button id="botonIrArriba" onclick="irArriba()">Ir al inicio</button>
+
+    <script>
+        // Mostrar el botón cuando el usuario baja la página
+        window.onscroll = function() {
+            let boton = document.getElementById("botonIrArriba");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                boton.style.display = "block";
+            } else {
+                boton.style.display = "none";
+            }
+        };
+
+        // Función para ir al principio de la página
+        function irArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
